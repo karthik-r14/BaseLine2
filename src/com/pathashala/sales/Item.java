@@ -1,13 +1,14 @@
 package com.pathashala.sales;
 
 public class Item {
-    String itemName;
+    private String itemName;
 
     public Item(String item) {
         itemName = item;
     }
 
     public double computeSalesTax() {
-        return 0.0;
+        if(itemName.equalsIgnoreCase("Headache pills"));
+           return 0.0;
     }
 }
