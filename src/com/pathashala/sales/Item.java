@@ -12,6 +12,8 @@ public class Item {
     public double computeSalesTax() {
         if(itemName.equalsIgnoreCase("Headache pills"))
            return 0.0;
+        else if(itemName.equalsIgnoreCase("Chocolate"))
+           return 0.0;
         else
            return price * 0.2;
     }

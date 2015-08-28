@@ -12,4 +12,11 @@ public class TestSales {
 
         assertEquals(0.0, item.computeSalesTax(), 0.001);
     }
+
+    @Test
+    public void shouldHaveSalesTaxZeroIfItemIsAFoodProduct() {
+        Item item = new Item("Chocolate", 0.85);
+
+        assertEquals(0.0, item.computeSalesTax(), 0.001);
+    }
 }
